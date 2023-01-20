@@ -1,47 +1,174 @@
 body {
 	background: rgb(255,255,255);
-	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(221,110,107,1) 35%, rgba(255,0,237,1) 52%);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(246,148,198,0.8996848739495799) 25%, rgba(236,95,226,1) 85%);
 }
 
-.container-cabecalho {
+h2 {
+	text-align: center;	
+	font-size: 35px;
+	margin: 0.3em 0;
+	font-weight: bold;	
+}
+
+.principal p {
+	font-size: 18px;
+}
+
+.cabecalho {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	/*background: #FCE3A9;*/
 	margin: 0 auto;
 	width: 100%;
+	flex-wrap: wrap;
 }
 
-.container-cabecalho-imagem {
-	width: 15em;
+.cabecalho__imagem {
+	width: 77vw;
 }
 
-.container-cabecalho-nav a {
-	padding: 5px;
-	border: 1px solid black;
+.cabecalho__botao {
+	text-decoration: none;
+	color: #f4f8de;
+	padding: 5px; 
+	border: 1px solid gray;
 	border-radius: 5px;
+	background-color: rgb(209, 39, 112);
 }
 
+.cabecalho__botao:active {
+	background-color: rgb(156, 39, 82);
+}
 
-.container-main-img {
-	width: 20%;	
+.sobre__imagem {
+	width: 35%;	
 	border: solid 1px black;
 	border-radius: 8em;
 }
 
-.container-main {
-	padding: 2em 10em;
+.sobre {
+	color: #f2f5c5;
+	padding: 5em 0;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	justify-content: space-around;
 }
 
-.container-main-titulo {
-	font-size: 3em;
-	margin: 1em 0;
+.sobre__conteudo {
+	width: 50%;
 }
 
-.container-main-conteudo {
-	width: 50%;
+.cardapios {
+	color: #f2f5c5;
+	text-align: center;
+}
+
+.cardapios__panquecas__imagem {
+	width: 100vw;
+}
+
+.cardapios__marmitas {
+	margin: 5em 0;
+}
+.cardapios__marmitas__imagem {
+	width: 100vw;
+}
+
+.rodape {
+	color: #f2f5c5;
+	margin-top: 5em;
+	color: ;
+	text-align: center;
+}
+
+.rodape__logo h3 {
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	height: 50px;
+}
+
+.rodape__conteudo {
+	margin-top: 2em;
+}
+
+@media (min-width: 720px) {
+	.cabecalho__imagem {
+		width: 50vw;
+	}
+
+	.cardapios__panquecas {
+		display: grid;
+		grid-template-areas: 
+		"imagem titulo"
+		"imagem texto";
+		align-items: center;
+	}
+
+	.cardapios__panquecas__imagem {
+		width: 50vw;
+		grid-area: imagem;
+	}
+
+	.cardapios__panquecas__titulo {
+		grid-area: titulo;
+	}
+
+	.cardapios__panquecas p {
+		align-self: baseline;
+	}
+
+	.cardapios__marmitas {
+		display: grid;
+		grid-template-areas: 
+		"titulo imagem"
+		"texto imagem";
+		align-items: center;
+	}
+
+	.cardapios__marmitas p {
+		align-self: baseline;
+	}
+
+	.cardapios__marmitas__imagem {
+		grid-area: imagem;
+		width: 50vw;
+	}
+
+	.cardapios__marmitas__titulo {
+		grid-area: titulo;
+		text-align: ;
+	}
+
+}
+
+@media (min-width: 1080px){
+	.cabecalho__imagem {
+		width: 30vw;
+	}
+
+	.cabecalho {
+		justify-content: space-around;
+	}
+
+	.sobre__imagem {
+		width: 20%;
+	}
+
+	.cardapios__panquecas__imagem {
+		width: 40vw;
+	}
+
+	.cardapios__panquecas p {
+		padding: 3em;
+	}
+
+	.cardapios__marmitas__imagem {
+		width: 40vw;
+	}
+
+	.cardapios__marmitas p {
+		padding: 3em;
+	}
 }
