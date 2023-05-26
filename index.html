@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+
+    <title>Panquecas da Su</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- modelos de panqueca na lista e no carrinho -->
+    <div class="models">
+
+        <!-- panqueca na lista -->
+        <div class="panqueca-item">
+            <a href="">
+                <div class="panqueca-item--img"><img src="" /></div>
+                <div class="panqueca-item--add">+</div>
+            </a>
+            <div class="panqueca-item--price">R$ --</div>
+            <div class="panqueca-item--name">--</div>
+            <div class="panqueca-item--desc">--</div>
+        </div>
+
+        <!-- panqueca no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <h1>Panquecas da Su</h1>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Panquecas</h2>
+
+        <div class="panqueca-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas Panquecas</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .panquecaWindowArea -->
+    <div class="panquecaWindowArea">
+        <div class="panquecaWindowBody">
+            <div class="panquecaInfo--cancelMobileButton">Voltar</div>
+            <div class="panquecaBig">
+                <img src="" />
+            </div>
+            <div class="panquecaInfo">
+                <h1>--</h1>
+                <div class="panquecaInfo--desc">--</div>
+                <div class="panquecaInfo--sizearea">
+                    <div class="panquecaInfo--sector">Tamanho</div>
+                    <div class="panquecaInfo--sizes">
+                        <div data-key="P" class="panquecaInfo--size">PEQUENA <span>--</span></div>
+                        <div data-key="M" class="panquecaInfo--size">MÉDIA <span>--</span></div>
+                    </div>
+                </div>
+                <div class="panquecaInfo--pricearea">
+                    <div class="panquecaInfo--sector">Preço</div>
+                    <div class="panquecaInfo--price">
+                        <div class="panquecaInfo--actualPrice">R$ --</div>
+                        <div class="panquecaInfo--qtarea">
+                            <button class="panquecaInfo--qtmenos">-</button>
+                            <div class="panquecaInfo--qt">1</div>
+                            <button class="panquecaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panquecaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="panquecaInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .panquecaWindowArea -->
+
+    <script src="panquecas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
